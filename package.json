@@ -1,0 +1,27 @@
+{
+  "name": "balap-ketik",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Balap Ketik (MotoType Racing) - realtime typing motorcycle racing game. No database, session-only data.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n server,client -c magenta,cyan \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "build": "npm run build --workspace client && npm run build --workspace server",
+    "start": "npm run start --workspace server",
+    "typecheck": "npm run typecheck --workspace client && npm run typecheck --workspace server"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5"
+  },
+  "overrides": {
+    "shell-quote": "^1.12.0"
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}

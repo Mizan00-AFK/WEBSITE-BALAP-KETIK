@@ -1,0 +1,13 @@
+.race-canvas {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #080b12;
+}
+
+/* Phaser renders at device resolution; always display at the container size. */
+.race-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}

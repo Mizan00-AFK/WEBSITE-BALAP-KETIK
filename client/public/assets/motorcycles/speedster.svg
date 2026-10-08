@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 110" width="200" height="110">
+  <!-- Speedster: supersport. Wheel centres (44,82) & (160,82), r=24 - keep them when replacing this sprite. -->
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a5f3fc"/>
+      <stop offset="0.45" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#334155"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="44" cy="82" r="24" fill="#05070c"/>
+    <circle cx="44" cy="82" r="20.5" fill="none" stroke="#1f2937" stroke-width="3"/>
+    <circle cx="44" cy="82" r="15" fill="#0b1220" stroke="#22d3ee" stroke-width="2.5"/>
+    <circle cx="44" cy="82" r="9" fill="none" stroke="#475569" stroke-width="2"/>
+    <circle cx="44" cy="82" r="4" fill="#cbd5e1"/>
+    <circle cx="160" cy="82" r="24" fill="#05070c"/>
+    <circle cx="160" cy="82" r="20.5" fill="none" stroke="#1f2937" stroke-width="3"/>
+    <circle cx="160" cy="82" r="15" fill="#0b1220" stroke="#22d3ee" stroke-width="2.5"/>
+    <circle cx="160" cy="82" r="9" fill="none" stroke="#475569" stroke-width="2"/>
+    <circle cx="160" cy="82" r="4" fill="#cbd5e1"/>
+  </g>
+  <path d="M158 82 L139 38" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+  <path d="M162 82 L143 40" stroke="#64748b" stroke-width="3" stroke-linecap="round"/>
+  <path d="M140 66 Q160 52 178 64 L174 67 Q160 58 144 69 Z" fill="#0e7490"/>
+  <path d="M44 82 L90 70" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+  <path d="M84 60 L120 58 L126 80 L92 84 Z" fill="#1f2937"/>
+  <path d="M92 64 L116 62 L120 76 L96 78 Z" fill="#374151"/>
+  <path d="M28 62 L70 68 L70 76 L28 70 Z" fill="#64748b"/>
+  <path d="M28 62 L35 63 L35 71 L28 70 Z" fill="#1e293b"/>
+  <path d="M14 44 L50 41 L72 49 L92 43 L112 35 L134 37 L152 42 L172 54 L166 61 L146 64 L134 77 L98 81 L86 66 L62 60 L38 56 Z" fill="url(#body)" stroke="#0b1220" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M44 43 L72 49 L66 54 L42 49 Z" fill="#0f172a"/>
+  <path d="M98 58 L150 50 L162 56 L102 64 Z" fill="#f8fafc" opacity="0.9"/>
+  <path d="M18 46 L48 44 L46 47 L20 48 Z" fill="#f8fafc" opacity="0.8"/>
+  <path d="M108 66 L130 63 L128 70 L108 72 Z" fill="#0f172a" opacity="0.55"/>
+  <path d="M160 50 L172 54 L166 58 Z" fill="#fef9c3"/>
+  <path d="M68 46 L82 39 L114 23 L122 31 L92 50 Z" fill="url(#suit)"/>
+  <path d="M84 41 L112 27 L114 30 L86 44 Z" fill="#22d3ee"/>
+  <path d="M108 27 L141 38 L139 44 L106 35 Z" fill="#1e293b"/>
+  <circle cx="141" cy="41" r="3.5" fill="#0f172a"/>
+  <path d="M70 45 L106 55 L102 62 L68 52 Z" fill="url(#suit)"/>
+  <path d="M100 55 L107 60 L92 75 L85 72 Z" fill="#1e293b"/>
+  <path d="M82 71 L94 73 L93 78 L80 77 Z" fill="#020617"/>
+  <circle cx="121" cy="21" r="11.5" fill="#f1f5f9"/>
+  <path d="M110 19 Q121 6 132 18 L132 21 Q121 14 110 22 Z" fill="#22d3ee"/>
+  <path d="M123 18 L133 20 L132 27 L122 25 Z" fill="#0f172a"/>
+  <path d="M130 37 L141 26 L153 41 L141 43 Z" fill="#a5f3fc" opacity="0.45"/>
+</svg>

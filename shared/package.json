@@ -1,0 +1,6 @@
+{
+  "name": "balap-ketik-shared",
+  "private": true,
+  "description": "Code shared by client and server (not an npm workspace, only marks the folder as ES modules).",
+  "type": "module"
+}

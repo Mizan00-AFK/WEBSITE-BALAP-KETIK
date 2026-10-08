@@ -1,0 +1,88 @@
+.racing-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 50% -10%, rgba(34, 211, 238, 0.1), transparent 55%),
+    linear-gradient(180deg, #080b12 0%, #0a0f1d 60%, #080b12 100%);
+}
+
+.bg-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.45;
+}
+
+.bg-glow-1 {
+  width: 520px;
+  height: 520px;
+  left: -160px;
+  top: 10%;
+  background: rgba(168, 85, 247, 0.35);
+}
+
+.bg-glow-2 {
+  width: 620px;
+  height: 520px;
+  right: -200px;
+  bottom: -120px;
+  background: rgba(34, 211, 238, 0.28);
+}
+
+/* Perspective neon road grid at the bottom */
+.bg-road {
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  bottom: -10%;
+  height: 55%;
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.12) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: perspective(380px) rotateX(62deg);
+  transform-origin: 50% 100%;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 85%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 85%);
+  animation: grid-move 1.6s linear infinite;
+}
+
+.bg-lines span {
+  position: absolute;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(226, 232, 240, 0.55), transparent);
+  animation: speed-line linear infinite;
+  opacity: 0.35;
+}
+
+.bg-lines span:nth-child(3n) {
+  background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.8), transparent);
+}
+
+.bg-lines span:nth-child(4n) {
+  background: linear-gradient(90deg, transparent, rgba(251, 146, 60, 0.7), transparent);
+}
+
+.bg-particles span {
+  position: absolute;
+  bottom: -10px;
+  border-radius: 50%;
+  background: rgba(34, 211, 238, 0.7);
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.8);
+  animation: drift-up linear infinite;
+}
+
+.bg-particles span:nth-child(odd) {
+  background: rgba(168, 85, 247, 0.7);
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.8);
+}
+
+.bg-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.55));
+}

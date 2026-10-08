@@ -1,0 +1,26 @@
+{
+  "name": "balap-ketik-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Balap Ketik realtime server - Express + Socket.IO, in-memory state only (no database).",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --clear-screen=false src/server.ts",
+    "build": "esbuild src/server.ts --bundle --platform=node --format=esm --target=node20 --packages=external --sourcemap --outfile=dist/server.js",
+    "start": "node --enable-source-maps dist/server.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test:smoke": "tsx scripts/smoke-test.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.15.0",
+    "esbuild": "^0.28.2",
+    "socket.io-client": "^4.8.4",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3"
+  }
+}

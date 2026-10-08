@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 110" width="200" height="110">
+  <!-- Phantom: electric stealth prototype. Wheel centres (44,82) & (160,82), r=24 - keep them when replacing this sprite. -->
+  <defs>
+    <linearGradient id="hull" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4c1d95"/>
+      <stop offset="0.5" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f2937"/>
+      <stop offset="1" stop-color="#030712"/>
+    </linearGradient>
+  </defs>
+  <path d="M70 91 L134 91" stroke="#e879f9" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <g>
+    <circle cx="44" cy="82" r="24" fill="#05070c"/>
+    <circle cx="44" cy="82" r="21.5" fill="none" stroke="#a855f7" stroke-width="1.6" opacity="0.8"/>
+    <circle cx="44" cy="82" r="15" fill="#0b0618" stroke="#c084fc" stroke-width="2.5"/>
+    <circle cx="44" cy="82" r="9" fill="none" stroke="#4c1d95" stroke-width="2"/>
+    <circle cx="44" cy="82" r="4" fill="#f5d0fe"/>
+    <circle cx="160" cy="82" r="24" fill="#05070c"/>
+    <circle cx="160" cy="82" r="21.5" fill="none" stroke="#a855f7" stroke-width="1.6" opacity="0.8"/>
+    <circle cx="160" cy="82" r="15" fill="#0b0618" stroke="#c084fc" stroke-width="2.5"/>
+    <circle cx="160" cy="82" r="9" fill="none" stroke="#4c1d95" stroke-width="2"/>
+    <circle cx="160" cy="82" r="4" fill="#f5d0fe"/>
+  </g>
+  <path d="M157 82 L140 44" stroke="#475569" stroke-width="6" stroke-linecap="round"/>
+  <path d="M44 82 L92 72" stroke="#312e81" stroke-width="9" stroke-linecap="round"/>
+  <path d="M18 58 L36 54 L38 68 L20 70 Z" fill="#4c1d95"/>
+  <circle cx="24" cy="64" r="4.5" fill="#f0abfc"/>
+  <path d="M12 50 L46 40 L80 46 L108 32 L148 34 L178 50 L170 58 L146 62 L132 80 L66 82 L54 64 L30 60 Z" fill="url(#hull)" stroke="#a855f7" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M76 56 L128 54 L124 72 L80 74 Z" fill="#0f0b2e" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M84 60 H120 M84 64 H119 M85 68 H118" stroke="#6d28d9" stroke-width="1"/>
+  <path d="M30 56 L56 60 L70 77 L128 77 L142 58 L170 54" stroke="#e879f9" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <path d="M48 44 L80 49 L108 37 L146 38" stroke="#c084fc" stroke-width="1.5" fill="none" opacity="0.8"/>
+  <path d="M164 48 L178 51 L172 55 Z" fill="#f5d0fe"/>
+  <path d="M66 44 L80 37 L112 22 L120 30 L90 48 Z" fill="url(#suit)"/>
+  <path d="M82 40 L110 26 L112 29 L84 43 Z" fill="#a855f7"/>
+  <path d="M106 26 L140 36 L138 42 L104 34 Z" fill="#111827"/>
+  <circle cx="140" cy="39" r="3.5" fill="#030712"/>
+  <path d="M68 44 L104 54 L100 61 L66 51 Z" fill="url(#suit)"/>
+  <path d="M98 54 L105 59 L90 74 L83 71 Z" fill="#111827"/>
+  <path d="M80 70 L92 72 L91 77 L78 76 Z" fill="#000"/>
+  <circle cx="119" cy="20" r="11.5" fill="#111827" stroke="#7c3aed" stroke-width="1"/>
+  <path d="M120 16 L131 18 L130 25 L119 23 Z" fill="#e879f9" opacity="0.9"/>
+  <path d="M109 14 Q118 8 126 10" stroke="#a855f7" stroke-width="1.5" fill="none"/>
+  <path d="M126 34 L144 26 L164 42 L146 44 Z" fill="#c4b5fd" opacity="0.35"/>
+</svg>

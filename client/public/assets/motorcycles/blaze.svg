@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 110" width="200" height="110">
+  <!-- Blaze: street fighter with flames. Wheel centres (44,82) & (160,82), r=24 - keep them when replacing this sprite. -->
+  <defs>
+    <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fca5a5"/>
+      <stop offset="0.4" stop-color="#ef4444"/>
+      <stop offset="1" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#fde047"/>
+    </linearGradient>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f3f46"/>
+      <stop offset="1" stop-color="#18181b"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <circle cx="44" cy="82" r="24" fill="#05070c"/>
+    <circle cx="44" cy="82" r="20.5" fill="none" stroke="#27272a" stroke-width="3"/>
+    <circle cx="44" cy="82" r="15" fill="#0c0a0a" stroke="#ef4444" stroke-width="2.5"/>
+    <circle cx="44" cy="82" r="9" fill="none" stroke="#52525b" stroke-width="2"/>
+    <circle cx="44" cy="82" r="4" fill="#fde047"/>
+    <circle cx="160" cy="82" r="24" fill="#05070c"/>
+    <circle cx="160" cy="82" r="20.5" fill="none" stroke="#27272a" stroke-width="3"/>
+    <circle cx="160" cy="82" r="15" fill="#0c0a0a" stroke="#ef4444" stroke-width="2.5"/>
+    <circle cx="160" cy="82" r="9" fill="none" stroke="#52525b" stroke-width="2"/>
+    <circle cx="160" cy="82" r="4" fill="#fde047"/>
+  </g>
+  <path d="M158 82 L140 36" stroke="#a1a1aa" stroke-width="6" stroke-linecap="round"/>
+  <path d="M158 82 L151 64" stroke="#facc15" stroke-width="7" stroke-linecap="round"/>
+  <path d="M141 64 Q160 52 178 63 L174 66 Q160 58 145 68 Z" fill="#991b1b"/>
+  <path d="M44 82 L88 70" stroke="#27272a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M84 60 L118 58 L122 80 L90 84 Z" fill="#27272a"/>
+  <path d="M92 63 L114 62 L117 76 L95 78 Z" fill="#3f3f46"/>
+  <path d="M30 60 L68 66 L68 74 L30 68 Z" fill="#a1a1aa"/>
+  <path d="M30 60 L37 61 L37 69 L30 68 Z" fill="#18181b"/>
+  <path d="M12 38 L44 40 L70 50 L90 42 L114 34 L134 38 L150 44 L160 50 L150 56 L136 58 L128 66 L100 70 L86 64 L62 58 L36 52 Z" fill="url(#paint)" stroke="#450a0a" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M42 41 L70 50 L64 54 L40 46 Z" fill="#18181b"/>
+  <path d="M92 50 Q100 44 106 46 Q104 40 112 38 Q112 44 120 42 Q116 48 127 46 Q118 54 104 56 Q96 56 92 50 Z" fill="url(#flame)"/>
+  <path d="M16 40 Q28 37 32 41 Q36 37 43 41 Q35 46 21 44 Z" fill="url(#flame)"/>
+  <path d="M150 46 L161 50 L152 53 Z" fill="#fef9c3"/>
+  <path d="M146 53 L156 55 L148 57 Z" fill="#fef3c7"/>
+  <path d="M66 46 L80 39 L112 23 L120 31 L90 50 Z" fill="url(#suit)"/>
+  <path d="M82 41 L110 27 L112 30 L84 44 Z" fill="#ef4444"/>
+  <path d="M106 27 L140 37 L138 43 L104 35 Z" fill="#27272a"/>
+  <circle cx="140" cy="40" r="3.5" fill="#09090b"/>
+  <path d="M68 45 L104 55 L100 62 L66 52 Z" fill="url(#suit)"/>
+  <path d="M98 55 L105 60 L90 75 L83 72 Z" fill="#27272a"/>
+  <path d="M80 71 L92 73 L91 78 L78 77 Z" fill="#09090b"/>
+  <circle cx="119" cy="21" r="11.5" fill="#ef4444"/>
+  <path d="M108 22 Q112 12 120 14 Q118 18 124 16 Q122 22 112 24 Z" fill="url(#flame)"/>
+  <path d="M121 18 L132 20 L131 27 L120 25 Z" fill="#09090b"/>
+</svg>

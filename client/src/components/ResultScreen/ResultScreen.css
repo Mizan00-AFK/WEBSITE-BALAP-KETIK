@@ -1,0 +1,298 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.result-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+.trophy {
+  display: inline-block;
+  animation: pop-in 0.6s var(--ease) both;
+}
+
+.winner-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 28px;
+  width: min(640px, 100%);
+  box-shadow:
+    var(--shadow),
+    0 0 40px color-mix(in srgb, var(--lane-color) 25%, transparent);
+  animation: pop-in 0.6s 0.1s var(--ease) both;
+}
+
+.winner-bike {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.winner-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+}
+
+.winner-name {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--lane-color);
+  text-shadow: 0 0 20px color-mix(in srgb, var(--lane-color) 50%, transparent);
+}
+
+.winner-name em {
+  margin-left: 10px;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--purple);
+  vertical-align: middle;
+}
+
+.winner-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.winner-stats b {
+  font-family: var(--font-display);
+  color: var(--text);
+}
+
+.result-you {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+}
+
+.result-you.win {
+  color: var(--yellow);
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.ranking-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ranking-list li {
+  display: grid;
+  grid-template-columns: 40px 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border-left: 3px solid var(--lane-color);
+  background: rgba(8, 11, 18, 0.55);
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.ranking-list li.me {
+  background: color-mix(in srgb, var(--lane-color) 10%, rgba(8, 11, 18, 0.7));
+}
+
+.rk-medal {
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: var(--font-display);
+  color: var(--text-faint);
+}
+
+.rk-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.rk-name em {
+  margin-left: 8px;
+  font-style: normal;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--purple);
+}
+
+.rk-name em.you {
+  color: var(--cyan);
+}
+
+.rk-wpm {
+  color: var(--text);
+}
+
+.rk-time {
+  min-width: 70px;
+  text-align: right;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stat-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(8, 11, 18, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.08);
+}
+
+.stat-label {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.result-table-scroll {
+  overflow-x: auto;
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.result-table th {
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.result-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.result-table tr.me td {
+  color: var(--cyan);
+}
+
+.table-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.result-meta {
+  margin-top: 12px;
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (max-width: 860px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .winner-card {
+    flex-direction: column;
+    padding: 18px;
+    gap: 10px;
+  }
+
+  .winner-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .winner-stats {
+    justify-content: center;
+  }
+
+  .winner-bike {
+    width: 170px;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ranking-list li {
+    grid-template-columns: 32px 1fr auto;
+    font-size: 1rem;
+  }
+
+  .rk-time {
+    display: none;
+  }
+
+  .result-actions .btn {
+    flex: 1 1 100%;
+  }
+}
+
+.result-grid.single {
+  grid-template-columns: 1fr;
+}
+
+.result .result-meta {
+  margin-top: 0;
+  text-align: center;
+}
